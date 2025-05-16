@@ -84,7 +84,7 @@ export class MenuService {
       }
     } catch (error: unknown) {
       if (error instanceof Error && error.message === 'TIMEOUT') {
-        terminal.red('\n\nTimed out\n');
+        terminal.red('\n\nsession expiré\n');
         process.exit(0);
       }
       throw error;
