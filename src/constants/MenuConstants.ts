@@ -24,6 +24,7 @@ export const MVOLA_MENU: Menu = {
     { id: '4', label: "Retrait d'argent" },
     { id: '5', label: 'Paiement factures' },
     { id: '*', label: 'Page precedente' },
-    { id: '**', label: 'Menu principal' }
+    { id: '**', label: 'Menu principal' },
+    { id: '0', label: 'Quitter' }
   ]
 }; 

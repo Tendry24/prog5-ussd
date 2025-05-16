@@ -37,7 +37,7 @@ export class MenuService {
   }
 
   private async handleUserInput(): Promise<void> {
-    terminal('\nChoisissez une option : ');
+    terminal('\nChoisissez une option (0 pour quitter) : ');
     
     try {
       const inputPromise = terminal.inputField().promise;
@@ -48,6 +48,11 @@ export class MenuService {
       });
 
       const input = await Promise.race([inputPromise, timeoutPromise]);
+
+      if (input === '0') {
+        terminal.green('\n\nAu revoir !\n');
+        process.exit(0);
+      }
 
       if (input === '**') {
         this.goToMainMenu();
