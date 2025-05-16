@@ -33,7 +33,8 @@ export default [
       '@typescript-eslint/no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
       'indent': ['error', 2],
       'quotes': ['error', 'single'],
-      'semi': ['error', 'always']
+      'semi': ['error', 'always'],
+      'no-unused-vars': 'off'
     }
   }
 ]; 
