@@ -1,8 +1,11 @@
 import { MenuService } from './services/MenuService';
 
-async function main() {
+async function main(): Promise<void> {
   const menuService = new MenuService();
   await menuService.displayMenu();
 }
 
-main().catch(console.error);
+main().catch((error: Error): void => {
+  process.stderr.write(`${error.message}\n`);
+  process.exit(1);
+});

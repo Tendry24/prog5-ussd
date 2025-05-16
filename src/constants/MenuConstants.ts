@@ -21,7 +21,7 @@ export const MVOLA_MENU: Menu = {
     { id: '1', label: 'Acheter Credit ou offre Yas' },
     { id: '2', label: 'Transferer argent' },
     { id: '3', label: 'Mvola Credit ou Epargne' },
-    { id: '4', label: "Retrait d'argent" },
+    { id: '4', label: 'Retrait d\'argent' },
     { id: '5', label: 'Paiement factures' },
     { id: '*', label: 'Page precedente' },
     { id: '**', label: 'Menu principal' },

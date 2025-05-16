@@ -14,6 +14,13 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module'
+      },
+      globals: {
+        'process': 'readonly',
+        'setTimeout': 'readonly',
+        'clearTimeout': 'readonly',
+        'setInterval': 'readonly',
+        'clearInterval': 'readonly'
       }
     },
     plugins: {
